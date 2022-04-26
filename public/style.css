@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e35869;
+  font-family: 'Rubik', sans-serif;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 65px auto;
+  display: -webkit-box;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+}
+.login-form form{
+  width: 100%;
+  margin:10px;
+  background: #fff;
+
+}
+.login-form h1 {
+  padding: 35px;
+  font-weight: 300;
+}
+.login-form .content {
+  padding: 35px;
+  text-align: center;
+}
+.login-form .input-field {
+  padding: 12px 5px;
+}
+.login-form .input-field input {
+  font-size: 16px;
+  display: block;
+  font-family: 'Rubik', sans-serif;
+  width: 100%;
+  padding: 10px 1px;
+  border: 0;
+  border-bottom: 1px solid #747474;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.login-form .input-field input:focus {
+  border-color: #222;
+}
+
+.login-form .action {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+.login-form .action button {
+  width: 100%;
+  border: none;
+  padding: 18px;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  letter-spacing: 0.2px;
+  outline: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background: #2d3b55;
+  color: #fff;
+}
+.login-form .action button:hover {
+  background: #3c4d6d;
+
+}
+
+
+/* Chat CSS Style */
+
+
+#container{
+	width:65%;
+ height: 90vh;
+  margin: auto;
+  display:flex;
+  flex-direction: row;
+	background:#eff3f7;
+	margin:0 auto;
+	font-size:0;
+	border-radius:5px;
+	overflow:hidden;
+}
+aside{
+	width:30%;
+  color:#fff;
+	background-color:#3b3e49;
+	font-size:15px;
+}
+main{
+	width:70%;
+	font-size:15px;
+}
+
+aside h2{
+	padding:30px 20px;
+}
+
+aside ul{
+	padding-left:20px;
+	margin:0;
+	list-style-type:none;
+}
+aside li{
+	padding:10px 0;
+}
+main{
+  display:flex;
+  flex-direction:column;
+}
+main header{
+  background-color:#6e748a ;
+  padding: 12px;
+  color: #fff;
+}
+
+main header h2{
+	font-size:16px;
+	margin-bottom:5px;
+}
+
+#chat{
+	padding-left:0;
+  height: 100%;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+#chat li{
+	padding:10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:13px;
+	font-weight:normal;
+}
+#chat h3{
+	color:#bbb;
+}
+#chat .entete{
+	margin-bottom:5px;
+}
+#chat .message{
+	padding:4px 8px;
+	color:#fff;
+	line-height:25px;
+	max-width:90%;
+	display:inline-block;
+	text-align:left;
+	border-radius:5px;
+}
+#chat .me{
+	text-align:right;
+}
+#chat .you .message{
+	background-color:#58b666;
+}
+#chat .me .message{
+	background-color:#6fbced;
+}
+
+footer form{
+  width: 100%;
+  display: flex;
+
+}
+main footer input{
+	border: 0.5px solid rgb(134, 134, 134);
+	width:100%;
+	border-radius:3px;
+	font-size:13px;
+  padding:12px;
+
+}
+main footer textarea::placeholder{
+	color:#ddd;
+}
+main footer button{
+  padding:12px;
+  border: none;
+  background-color: #962d39;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#fff;
+}

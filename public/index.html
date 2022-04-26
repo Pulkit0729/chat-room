@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="./style.css">
+    <title>ChatRoom Login</title>
+</head>
+
+<body>
+    <div class="login-form">
+        <form id="form">
+            <h1>Login</h1>
+            <div class="content">
+                <div class="input-field">
+                    <input type="text" placeholder="Username" autocomplete="nope" id="user" required/>
+                </div>
+            </div>
+            <div class="action">
+                <button type="submit">Enter Chatroom</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        var form = document.getElementById("form");
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            var url = window.location+'chat.html?user='+e.target.user.value;
+            window.location.replace(url);
+        })
+    </script>
+</body>
+
+</html>
